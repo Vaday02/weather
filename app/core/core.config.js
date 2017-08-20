@@ -24,10 +24,11 @@
                 controllerAs: 'vm',
                 resolve: {
                     data: function (weather) {
-                        return weather.get().then(function (res) {
-                            return res;
+                        return weather.get(weather.currentObject.name).then(function (res) {
+                            return res.load(15, 0);
                         })
-                    }
+                    },
+
                 }
             })
             .state('login', {

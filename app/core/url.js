@@ -8,9 +8,10 @@
     url.$inject = [];
 
     function url() {
-        let baseUrl = 'http://www.metoffice.gov.uk/pub/data/weather/uk/climate/stationdata/bradforddata.txt';
+        // let baseUrl = 'http://www.metoffice.gov.uk/pub/data/weather/uk/climate/stationdata/';
+        let baseUrl = 'http://svm.biz.ua/weather/';
         return {
-            firsturl: baseUrl
+            baseUrl: baseUrl
         };
     }
 
