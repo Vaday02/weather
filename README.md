@@ -1,8 +1,8 @@
-##Info
+## Info
 
 For use files from original server, let uncomment in `app/core/url.js` original base url.
 Currently, app use downloaded files from original server to demo server.
-##Demo
+## Demo
 Let's see the [demo][demo]
 
 ## Getting Started
