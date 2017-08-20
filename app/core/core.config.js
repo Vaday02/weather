@@ -13,8 +13,11 @@
     function mainConfig($stateProvider, $urlRouterProvider) {
 
 
-        $urlRouterProvider.otherwise('/home');
-
+        // $urlRouterProvider.otherwise('/home');
+        $urlRouterProvider.otherwise(function ($injector) {
+            let $state = $injector.get('$state');
+            return $state.go('home');
+        });
         $stateProvider
 
             .state('home', {
